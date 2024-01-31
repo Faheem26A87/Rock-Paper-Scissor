@@ -59,22 +59,22 @@ function game(userChoice) {
     let compChoice = getcompChoice();
 
     if (userChoice==="r" && compChoice === "p"){
-        return win(userChoice, compChoice);
+        return lose(userChoice, compChoice);
     }
     else if (userChoice==="p" && compChoice === "s"){
-        return win(userChoice, compChoice);
+        return lose(userChoice, compChoice);
     }
     else if (userChoice==="s" && compChoice === "r"){
-        return win(userChoice, compChoice);
+        return lose(userChoice, compChoice);
     } 
     else if (userChoice==="r" && compChoice === "s"){
-        return lose(userChoice, compChoice);
+        return win(userChoice, compChoice);
     }
     else if (userChoice==="p" && compChoice === "r"){
-        return lose(userChoice, compChoice);
+        return win(userChoice, compChoice);
     }
     else if (userChoice==="s" && compChoice === "p"){
-        return lose(userChoice, compChoice);
+        return win(userChoice, compChoice);
     }
     else{
         return draw(userChoice, compChoice);
